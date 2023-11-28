@@ -21,6 +21,7 @@ module.exports = class Player {
         this.socket = socket;
         this.position = position;
 
+        
         socket.on('toggle_thrusters', value => {
             this.player.thrusters = value;
         });
